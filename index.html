@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container fadeIn">
+        <div class="header">
+            <h1>Morales Martinez Armando</h1>
+            <p>Ingeniero en sistemas</p>
+        </div>
+        
+        <div class="profile section">
+            <h2>Perfil</h2>
+            <p>Actualmente estoy cursando el 5to semestre de la carrera en ingeniería en sistemas. Con una pasión por la tecnología, me enfoco en el diseño de algoritmos, la programación en varios lenguajes y la gestión de proyectos. Busco oportunidades para aplicar mis conocimientos en proyectos significativos mientras continúo aprendiendo y creciendo profesionalmente en este campo. </p>
+        </div>
+
+        <div class="section experience">
+            <h2>Experiencia</h2>
+            <ul>
+                <li>
+                    <h3>Desarrollador Web Senior - Compañía XYZ</h3>
+                    <p>Junio 2020 - Presente</p>
+                    <p>Responsable del diseño y desarrollo de aplicaciones web escalables. Colaboré estrechamente con diseñadores y otros desarrolladores para crear interfaces de usuario intuitivas.</p>
+                </li>
+                <li>
+                    <h3>Desarrollador Web - Compañía ABC</h3>
+                    <p>Marzo 2017 - Mayo 2020</p>
+                    <p>Desarrollo y mantenimiento de sitios web corporativos y e-commerce. Implementé nuevas características y optimicé la experiencia de usuario.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section education">
+            <h2>Educación</h2>
+            <ul>
+                <li>
+                    <h3>-Ingenieria en sistemas computacionales</h3>
+                    <p>Tecnológico Superior de Jalisco Puerto Vallarta (en curso)</p>
+                </li>
+
+                <li>
+                    <h3>-Preparetoria</h3>
+                    <p>Icep vallarta 2016-2018</p>
+                </li>
+
+                <li>
+                    <h3>-Secundaria</h3>
+                    <p>Escuela secundaria foranea 29 2013-2016</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="skills">
+            <h2>Habilidades</h2>
+
+            <div class="skills">
+                <div class="skill-item">
+                    <h3>Java</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>MySQL</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 76%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>HTML/CSS</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 44%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Javascript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 10%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h3>Mantenimiento preventivo de equipos de computo</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="separator-container">
+        <h1>Proyectos</h1>
+        <hr>
+    </div>
+
+        <div class="section carousel">
+            <h3>Punto de venta en java/MySQL</h3>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/0000.png" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/0001.png" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/0002.png" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/0002.1.png" alt="Imagen 2">
+                </div> 
+                <div class="carousel-item">
+                    <img src="img/0002.2.png" alt="Imagen 2">
+                </div>  
+                <div class="carousel-item">
+                    <img src="img/0003.png" alt="Imagen 2">
+                </div> 
+                <div class="carousel-item">
+                    <img src="img/0004.png" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/0005.png" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/0006.png" alt="Imagen 2">
+                </div> 
+                <div class="carousel-item">
+                    <img src="img/0007.png" alt="Imagen 2">
+                </div>          
+            </div>
+           
+            <button class="carousel-control prev" onclick="prevSlide()">❮</button>
+            <button class="carousel-control next" onclick="nextSlide()">❯</button>
+        </div>
+
+        <div class="code-java-puntoventa">
+            <a href="https://github.com/ingmorales536/SistemaVentas.git">Codigo</a>
+        </div>
+
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+            
+            <a class="prev-modal" onclick="changeImage(-1)">&#10094;</a>
+            <a class="next-modal" onclick="changeImage(1)">&#10095;</a>
+        </div>
+
+        
+       
+        <div class="contact">
+            <p>Contacta conmigo:</p>
+            <a href="#">armandomorales10@hotmail.com</a>
+            <a href="https://www.linkedin.com/in/tuusuario">LinkedIn</a>
+            <a href="https://github.com/ingmorales536">GitHub</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
