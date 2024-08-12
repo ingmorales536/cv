@@ -2,11 +2,109 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
-    margin: 0;
-    padding: 20px;
+
     background-color: #000000;
     color: white;
 }
+
+.top-bar {
+    background: #00000057; 
+    color: white;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    right: 40px;
+    backdrop-filter: blur(7px);
+}
+
+
+.Download-cv {
+    margin-left: 60px;
+    color: white;
+    text-decoration: underline rgb(0, 0, 0);
+    
+}
+.Download-cv:hover {
+    cursor: pointer;
+    color: #ff3198;
+}
+
+
+.top-bar img {
+    width: 40px;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.Items-Navegacion :hover{
+    background-color: #242424;
+    border-radius: 10px;
+    height: 40px;
+}
+
+/* Estilos para los elementos de la navegación */
+.Items-Navegacion { 
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si es necesario */
+}
+
+.Items-Navegacion li {
+    margin-right: 20px;
+}
+
+.Items-Navegacion li:last-child {
+    margin-right: 45px;
+}
+
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 499px) {
+    @media (max-width: 499px) {
+        .top-bar {
+           display: flex;
+            
+        }
+    
+        .Items-Navegacion {
+            width: 100%; /* Asegura que ocupe todo el ancho disponible */
+            justify-content: space-around; /* Distribuye uniformemente los elementos */
+        }
+    
+        .Items-Navegacion li {
+            margin-right: 0px; /* Quita el margen derecho de los items */
+            margin-bottom: 5px; /* Agrega un margen inferior entre los elementos */
+           
+            
+        }
+    
+        .Items-Navegacion li:last-child {
+            margin-bottom: 0; /* Quita el margen inferior del último elemento */
+            
+        }
+ 
+        .top-bar img {
+            margin-top: -10px;
+            width: 35px;
+            margin-left: 13px;
+        }
+        .Download-cv {
+            font-size: 20px;
+        }
+    
+    
+    }
+
+
+}
+
 
 .container {
     max-width: 90%;
@@ -15,6 +113,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
 }
 
 .header {
@@ -128,6 +227,7 @@ body {
         max-width: 100%;
         margin: 0;
         padding: 0;
+        margin-top: 100px;
     }
 
     .skills {
@@ -141,6 +241,7 @@ body {
         max-width: 100%;
         margin: 0;
         padding: 0;
+        margin-top: 100px;
     }
 
     .skills {
